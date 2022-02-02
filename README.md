@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @W35L3YLUC45M45. Or in other words, my name's Wesley Lucas Mas :)
+- 👀 I’m interested in UI/UX design while applying a coat of HTML/CSS to my own personal designs :D
+- 🌱 I’m currently learning different JavaScript frameworks so I can get the best experience out of the front-end development area ¯\_(ツ)_/¯
+- 📫 For business inquiries, you can reach me out to my business email: wesleylucasmas@hotmail.com
