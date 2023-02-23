@@ -2,7 +2,7 @@
 
 - 👋 Hi, I’m @W35L3YLUC45M45. Or in other words, my name's Wesley Lucas Mas :)
 - 👀 I’m interested in UI/UX design while applying a coat of HTML/CSS to my own personal designs :D
-- 👨‍💻 Here you can find all of the projects I've worked on so far, using languages such as Javascript (and frameworks like Vue), PHP, C, SQL, etc...
+- 👨‍💻 Here you can find all of the projects I've worked on so far, using languages such as Javascript, PHP, , Java, C, SQL, Matlab etc...
 - 🌱 I’m currently learning different JavaScript frameworks so I can get the best experience out of the front-end development area ¯_(ツ)_/¯
 - 📫 For business inquiries, you can reach me out to my business email: weslucasmas@outlook.com
 
