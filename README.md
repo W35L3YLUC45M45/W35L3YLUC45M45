@@ -5,6 +5,7 @@
 - 👨‍💻 Here you can find all of the projects I've worked on so far, using languages such as Javascript, PHP, Java, C, SQL, Matlab, etc...
 - 🌱 I’m currently learning different JavaScript frameworks so I can get the best experience out of the front-end development area ¯\_(ツ)_/¯
 - 📫 For business inquiries, you can reach me out to my business email: weslucasmas@outlook.com
+- 🌏 You can also find my other non-related programming projects clicking on the following link: https://linktr.ee/weslucasmas
 
 # Website CV (**work in progress**)
 
