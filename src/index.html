@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wesley Lucas Mas</title>
+    <link rel='shortcut icon' type='image/x-icon' href='fav_icon_alt.ico' />    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Wesley Lucas Mas">
+    <meta name="description" content="Wesley Lucas Mas' CV">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript">
+        console.log("Hello World!");
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    !-->
+    <script src="https://kit.fontawesome.com/c67a85f559.js" crossorigin="anonymous"></script>
+</head>
+<!--
+    Notes:
+    - Colors:
+        + #141d22
+        + #e7e7e7
+        + #b2b3b2
+        + #303030
+
+    - Recommended palette:
+        + #2e2f32
+        + #c7c2c5
+        + #7d797a
+        + #5a5658
+        + #375572
+        + #317eb5
+        + #33babe
+        + #377772
+        + #ce3a66
+    - w3schools:
+        + https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style_none
+-->
+<body>
+    <header>
+        <div class="main-header">
+            <div class="left-header">
+                <ul>
+                    <div id="business-contact" title="Contact me">
+                        <a href = "mailto: weslucasmas@outlook.com">
+                            <img class="fa fa-envelope filter-white-grey" src="media/svg/envelope-solid.svg"></img>
+                            <img class="fa-solid fa-envelope-open-text filter-white-grey" src="media/svg/envelope-open-text-solid.svg"></img>
+                        </a>
+                    </div>
+
+                    <div id="linkedin">
+                        <a href="https://www.linkedin.com/in/wesley-lucas-mas/" target="_blank">
+                            <img class="fa fa-linkedin-square filter-white-grey" src="media/svg/linkedin-brands.svg"></img>
+                        </a>
+                    </div>
+
+                    <div id="download-cv" title="Download my CV">
+                        <a href="media/img/gru_gun.png" download>
+                            <img class="fas fa-download filter-white-grey" src="media/svg/download-solid.svg"></img>
+                        </a>
+                    </div> 
+                    
+                </ul>
+            </div>
+            <div class="center-header">
+                <ul>
+                    <div class="about-me-title" href="#about-me">
+                        <a href="#about-me">
+                            <img class="fa-solid fa-circle-user fa-lg filter-white-grey" src="media/svg/circle-user-solid.svg"></img>
+                            <p class="about-me-text">ABOUT ME</p>
+                        </a>
+                    </div>
+
+                    <div class="education-title" href="#education">
+                        <a href="#education">
+                            <img class="fa-solid fa-graduation-cap fa-lg filter-white-grey" src="media/svg/graduation-cap-solid.svg"></img>
+                            <p class="education-text">EDUCATION</p>
+                        </a>
+                    </div>
+
+                    <div class="experience-title" href="#career">
+                        <a href="#career">
+                            <img class="fa-solid fa-diagram-project fa-lg filter-white-grey" src="media/svg/diagram-project-solid.svg"></img>
+                            <p class="experience-text">CAREER</p>
+                        </a>
+                    </div>
+
+                    <div class="skills-title" href="#skills">
+                        <a href="#skills">
+                            <img class="fa-solid fa-layer-group fa-lg filter-white-grey" src="media/svg/layer-group-solid.svg"></img>
+                            <p class="skills-text">SKILLS</p>
+                        </a>
+                    </div>
+                    
+                    <div class="services-title" href="#services">
+                        <a href="#services">
+                            <img class="fa-solid fa-handshake-angle fa-lg filter-white-grey" src="media/svg/handshake-angle-solid.svg"></img>
+                            <p class="services-text">SERVICES</p>
+                        </a>
+                    </div>
+                    <div class="availability-title" href="#availability">
+                        <a href="#availability">
+                            <img class="fa-solid fa-calendar-check fa-lg filter-white-grey" src="media/svg/calendar-check-solid.svg"></img>
+                            <p class="availability-text">AVAILABILITY</p>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <div class="right-header">
+                <ul>
+                    <span id="github">
+                        <img class="fa fa-github" onclick="location.href='https://github.com/W35L3YLUC45M45'" target="_blank" src="media/svg/github-brands.svg"></img>
+                    </span>
+
+                    <span id="codepen">
+                        <img class="fab fa-codepen filter-white-grey" onclick="location.href='https://codepen.io/wesleylucasmas'" src="media/svg/codepen-brands.svg"></img>
+                    </span>
+                    
+                    <!-- https://codepen.io/moshfequr9/pen/ZjyeZj -->
+                    <span id="figma">
+                        <div class="wrapper" onclick="location.href='https://www.figma.com/file/YZp9LreyyrwhSJQx4i95bh/Untitled?node-id=0%3A1'">
+                            <div class="logo">
+                                <div class="part red"></div>
+                                <div class="part light-red"></div>
+                                <div class="part purple"></div>
+                                <div class="part blue-sky"></div>
+                                <div class="part green-slime"></div>
+                            </div>
+                        </div>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress" id="bar"></div>
+        </div>
+    </header>
+    <!--
+    <nav></nav>
+    -->
+    <main>
+        <article>
+            <section>
+                <div class="container">
+                    <div id="about-me">
+                        <div class="general-title">
+                            <p>Wesley Lucas Mas</p>
+                        </div>
+                        <div class="profile-intro">
+                            <div class="about-me-info">
+                                <div class="title">
+                                    <p>Welcome to my website!</p>
+                                </div>
+                                <div class="description">
+                                    <p>Description Info</p>
+                                </div>
+                            </div>
+                            <div class="about-me-extra-info">
+                                <img src="media/img/extra/pfp-circle-color.png">
+                                <p>Profile Info</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="education">
+                        <div class="title-education">
+                            <p>Education</p>
+                        </div>
+                        <div class="section-line">
+                            <p><i>Academic Institutions</i></p>
+                        </div>
+                        <div class="institutions">
+                            <div class="university">
+                                <div class="image-container">
+                                    <div class="myUniversityImages fade">
+                                        <img src="media/img/lasalle-campus-1.jpg" alt="no-img">
+                                    </div>
+                                    
+                                    <div class="myUniversityImages fade">
+                                        <img src="media/img/lasalle-campus-2.jpg" alt="no-img">
+                                    </div>
+                                    <div class="myUniversityImages fade">
+                                        <img src="media/img/lasalle-campus-3.jpg" alt="no-img">
+                                    </div>
+
+                                    <div class="myUniversityImages fade">
+                                        <img src="media/img/lasalle-campus-4.jpg" alt="no-img">
+                                    </div>
+
+                                    <div class="myUniversityImages fade">
+                                        <img src="media/img/lasalle-campus-5.jpg" alt="no-img">
+                                    </div>
+                                </div>
+                                <div class="extra">
+                                    <img src="media/img/lasalle-logo-2.jpg" alt="no-img">
+                                    <div class="info">
+                                        <h1>La Salle BCN, Ramon Llull University</h1>
+                                        <p><i>Degree in Multimedia Engineering</i></p>
+                                        <p class="date">Sep 2017 - 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="honors">
+                                <div class="video">
+                                    <h1>Honors in Multimedia Production I</h1>
+                                    <div class="img">
+                                        <img class="svg-video" src="media/svg/video-edition-2.svg"></img>
+                                    </div>
+                                    <div class="text">
+                                        <p class="description">Awarded with honors for getting one of the highest grades of the entire course having mastered mainly the use of video editing tools such as Adobe Premiere and Adobe After Effects for a large-scale project where we had to carry out the production process of a short film. From scripts (literary, technical) and storyboards, to the recording and post-production of the film. My role was that of director, whose functions have been from the development of the literary and technical scripts, order and planning of shooting days and the elements to appear in each scene and finally, the post-production editing of the short film itself. The final result ended up being a video of approximately 10 minutes which during the post-production phase was treated with elements such as the elimination of the green background of the chroma key, stabilizers, motion trackers, coordinated composition of elements, among other things.</p>
+                                        <p class="date"><i>Issued by La Salle Campus Barcelona · Jun 2022</i></p>
+                                    </div> 
+                                </div>
+                                <div class="web">
+                                    <h1>Honors in Web Dev. Projects</h1>
+                                    <div class="img">
+                                        <img class="svg-web" src="media/svg/web-development.svg"></img>
+                                    </div>
+                                    <div class="text">
+                                        <p class="description">Awarded with honors for getting one of the highest grades of the whole course by understanding and putting into practice the fundamentals of PHP, a backend programming language. Throughout the course we practiced not only the basics of the language through projects based on real-world practices such as implementing APIs, creating forms and saving the information in a MySQL database and such. In the final project of the semester we also used a template engine called Twig, which me and my group put into practice by developing a photography based website that followed the bases of Pinterest, where we have a database with different users who can register/login, create albums where they can upload local/external (link) photos of their choice, select a membership plan which can affect in different ways to the user, among other things complemented with an attractive CSS design.</p>
+                                        <p class="date"><i>Issued by La Salle Campus Barcelona · Jun 2022</i></p>
+                                    </div>
+                                </div>
+                                <div class="physics">
+                                    <h1>Honors in Physics Simulation</h1>
+                                    <div class="img">
+                                        <img class="svg-physics" src="media/svg/machine-learning.svg"></img>
+                                    </div>
+                                    <div class="text">
+                                        <p class="description">Awarded with honors for getting one of the highest grades of the whole course by learning and putting into practice many different aspects of physics simulation. These aspects range from developing 2D videogames to working with genetics algorithms. In the case of 2D videogame development, we used the p5.js library (or Processing) along with the Box2D physics library to develop games like Angry Birds and a billiards game where we had to program not only the rules' logics, but also the collisions for both games. Lastly, regarding the genetics algorithms, we learned and put into practice all of the concepts of this field through projects done on Processing and even Python, where we had to document, justify and experiment with many different algorithms and the results that presented the generations of the simulations we ran through a script.</p>
+                                        <p class="date"><i>Issued by La Salle Campus Barcelona · Jun 2022</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music-conservatory">
+                                <div class="image-container">
+                                    <div class="myConservatoryImages fade">
+                                        <img src="media/img/liceu-5.jpg" alt="no-img">
+                                    </div>
+                                    
+                                    <div class="myConservatoryImages fade">
+                                        <img src="media/img/liceu-1.jpg" alt="no-img">
+                                    </div>
+                                    <div class="myConservatoryImages fade">
+                                        <img src="media/img/liceu-2.jpg" alt="no-img">
+                                    </div>
+
+                                    <div class="myConservatoryImages fade">
+                                        <img src="media/img/liceu-3.jpg" alt="no-img">
+                                    </div>
+
+                                    <div class="myConservatoryImages fade">
+                                        <img src="media/img/liceu-4.jpg" alt="no-img">
+                                    </div>
+                                </div>
+                                <div class="extra">
+                                    <img src="media/img/liceu-logo-2.jpg" alt="no-img">
+                                    <div class="info">
+                                        <h1>Liceu Music Conservatory</h1>
+                                        <p><i>Bachelor of Classic Music - BM, Piano Performance</i></p>
+                                        <p class="date">Sep 2005 - Jun 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cambridge">
+                                <div class="first-certificate">
+                                    <img src="media/img/university-of-cambridge.png" alt="no-img">
+                                    <div class="info">
+                                        <h1>University of Cambridge</h1>
+                                        <p><i>Cambridge B2 First Certificate in English (FCE)</i></p>
+                                        <p class="date">July 2016</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="section-line">
+                            <p><i>Languages</i></p>
+                        </div>
+                        <div class="languages">
+                            <div class="lang-container">
+                                <div class="spanish">
+                                    <img src="media/img/spanish-flag.png" alt="no-img">
+                                    <div class="info">
+                                        <h1>Spanish</h1>
+                                        <div class="details">
+                                            <p>Level:</p>
+                                            <p><i>Native</i></p>
+                                        </div>                             
+                                    </div>
+                                </div>
+                                <div class="catalan">
+                                    <img src="media/img/catalan-flag.png" alt="no-img">
+                                    <div class="info">
+                                        <h1>Catalan</h1>
+                                        <div class="details">
+                                            <p>Level:</p>
+                                            <p><i>Native</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="english">
+                                    <img src="media/img/english-flag.png" alt="no-img">
+                                    <div class="info">
+                                        <h1>English</h1>
+                                        <div class="details">
+                                            <p>Level:</p>
+                                            <p><i>Native</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="japanese">
+                                    <img src="media/img/japanese-flag.png" alt="no-img">
+                                    <div class="info">
+                                        <h1>Japanese</h1>
+                                        <div class="details">
+                                            <p>Level:</p>
+                                            <p><i>Beginner</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="career">
+                        <div class="title-experience">
+                            <p>Career</p>
+                        </div>
+                        <div class="timeline">
+                            <p><i>Recent to Old</i></p>
+                        </div>
+                        <div class="experiences">
+                            <div class="exp-container">
+                                <div class="exp">
+                                    <img src="media/img/lasalle-logo-2.jpg" alt="no-img">
+                                    <div class="content">
+                                        <div class="job-title">
+                                            <h2><b>Multimedia Production I Teacher Assistant</b></h2>
+                                            <h3>La Salle BCN · Internship</h3>
+                                        </div>
+                                        <div class="job-extra">
+                                            <p><i>Sep 2022 - Now</i></p>
+                                            <p><i>Barcelona, Spain</i></p>
+                                        </div>
+                                        <p class="job-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <img src="media/img/lasalle-logo-2.jpg" alt="no-img">
+                                    <div class="content">
+                                        <div class="job-title">
+                                            <h2><b>Hypermedia Programming Intern</b></h2>
+                                            <h3>La Salle BCN · Internship</h3>
+                                        </div>
+                                        <div class="job-extra">
+                                            <p><i>Sep 2022 - Now</i></p>
+                                            <p><i>Barcelona, Spain</i></p>
+                                        </div>
+                                        <p class="job-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <img src="media/img/lasalle-logo-2.jpg" alt="no-img">
+                                    <div class="content">
+                                        <div class="job-title">
+                                            <h2><b>Programming Methodology & Tech Intern</b></h2>
+                                            <h3>La Salle BCN · Internship</h3>
+                                        </div>
+                                        <div class="job-extra">
+                                            <p><i>Sep 2022 - Now</i></p>
+                                            <p><i>Barcelona, Spain</i></p>
+                                        </div>
+                                        <p class="job-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container">
+                                <div class="exp">
+                                    <img src="media/img/lasalle-logo-2.jpg" alt="no-img">
+                                    <div class="content">
+                                        <div class="job-title">
+                                            <h2><b>3D Computer Graphics Intern</b></h2>
+                                            <h3>La Salle BCN · Internship</h3>
+                                        </div>
+                                        <div class="job-extra">
+                                            <p><i>Sep 2021 - Jan 2022 (5 months)</i></p>
+                                            <p><i>Barcelona, Spain</i></p>
+                                        </div>
+                                        <p class="job-details">My role in this position was to assist as an intern in a subject focused on the generation of 3D graphics using the OpenGL API in projects programmed in C/C++. From reviewing and providing assistance to students with their projects to translating documentation related to matrix transformations, loading textures, shaders, objects and meshes, as well as proctoring exam sessions.</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <img src="media/img/lasalle-logo-2.jpg" alt="no-img">
+                                    <div class="content">
+                                        <div class="job-title">
+                                            <h2><b>Usability & Design (UI/UX) Intern</b></h2>
+                                            <h3>La Salle BCN · Internship</h3>
+                                        </div>
+                                        <div class="job-extra">
+                                            <p>Sep 2020 - Jun 2021 (10 months)</p>
+                                            <p>Barcelona, Spain</p>
+                                        </div>
+                                        <p class="job-details">My role in this position was to assist as an intern in a subject focused on the UI/UX environment, both assisting students with projects made with programs such as Adobe Illustrator (Ai), Adobe Photoshop (Ps) and Figma, and translating design and usability theory documents from Spanish/Catalan to English and writing new documentation related to the use and features of some of the aforementioned programs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <div class="title-skills">
+                            <p>Skills</p>
+                            <div class="metrics">
+                                <div class="level-one">
+                                    <img src="media/img/metrics/n-metr.png" alt="no-img">
+                                    <h2><b>Novice</b></h2>
+                                    <p class="descr">New to a job and know little or nothing about the work. Must be taught the basics of what is to be done before I can have any chance of being productive in order to be of service.</p>
+                                    <p class="statement"><i><b>"Show me how to do my job"</b></i></p>
+                                </div>
+                                <div class="level-two">
+                                    <img src="media/img/metrics/c-metr_1.png" alt="no-img">
+                                    <h2><b>Competent</b></h2>
+                                    <p class="descr">Can perform jobs and tasks to basic standards. Already had basic training and now looking for more coaching and practice to get better at what I do. </p>
+                                    <p class="statement"><i><b>“Help me do it better”</b></i></p>
+                                </div>
+                                <div class="level-three">
+                                    <img src="media/img/metrics/e-metr.png" alt="no-img">
+                                    <h2><b>Experienced</b></h2>
+                                    <p class="descr">I need access to knowledge and performance resources on demand, and the ability to search those resources in ways that are flexible and customizable for my optimal performance, depending on the task given.</p>
+                                    <p class="statement"><i><b>“Help me find what I need”</b></i></p>
+                                </div>
+                                <div class="level-four">
+                                    <img src="media/img/metrics/m-metr.png" alt="no-img">
+                                    <h2><b>Master</b></h2>
+                                    <p class="descr">Inventing new and better ways to do a job, and also able to teach others how to do it. Based on learning in unique and personal ways, primarily through collaboration, research, and problem solving.</p>
+                                    <p class="statement"><i><b>"I’ll create my own learning"</b></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-grid">
+                            <div class="frontend-web">
+                                <div class="frontend-web-card-container">
+                                    <div class="frontend-title-cell">
+                                        <p class="title-frontend-web-card-container">Frontend Development</p>
+                                    </div>
+                                    <div class="flip-card" id="card-html">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/html.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back html-fill white-text">
+                                                <h1>HTML</h1>
+                                                <p><b><u>Level</u></b>: Experienced</p>
+                                                <p><b><u>Time use</u></b>: +9 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Web development and live streaming content creation</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-css">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/css.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back css-fill white-text">
+                                                <h1>CSS</h1>
+                                                <p><b><u>Level</u></b>: +Competent</p>
+                                                <p><b><u>Time use</u></b>: +9 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Web development and live streaming content creation</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-js">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/js.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back js-fill">
+                                                <h1>Javascript</h1>
+                                                <p><b><u>Level</u></b>: Competent</p>
+                                                <p><b><u>Time use</u></b>: +6 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Web development and live streaming content creation</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-vue">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/vue.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back vue-fill white-text">
+                                                <h1>Vue</h1>
+                                                <p><b><u>Level</u></b>: +Novice</p>
+                                                <p><b><u>Time use</u></b>: +3 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Currently learning it in order to master all of its tools that has to offer</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-sass">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/sass.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back sass-fill white-text">
+                                                <h1>Sass</h1>
+                                                <p><b><u>Level</u></b>: Competent</p>
+                                                <p><b><u>Time use</u></b>: +6 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Currently using it for web development projects and still learning its tools</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-ux-design">
+                                <div class="ui-ux-design-card-container">
+                                    <div class="ui-ux-design-title-cell">
+                                        <p class="title-ui-ux-design-card-container">UI/UX Design</p>
+                                    </div>
+                                    <div class="flip-card" id="card-ai">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/ai.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back ai-fill">
+                                                <h1>Adobe Illustrator</h1>
+                                                <p><b><u>Level</u></b>: +Experienced</p>
+                                                <p><b><u>Time use</u></b>: +4 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Art, content creation and web development assets production</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-xd">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/xd.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back xd-fill">
+                                                <h1>Adobe Xd</h1>
+                                                <p><b><u>Level</u></b>: Experienced</p>
+                                                <p><b><u>Time use</u></b>: +2 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Webpage mock-up designs prototyping</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-ps">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/ps.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back ps-fill">
+                                                <h1>Photoshop</h1>
+                                                <p><b><u>Level</u></b>: Competent</p>
+                                                <p><b><u>Time use</u></b>: +2 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Content creation and web development assets production</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-figma">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/figma.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back figma-fill white-text">
+                                                <h1>Figma</h1>
+                                                <p><b><u>Level</u></b>: Experienced</p>
+                                                <p><b><u>Time use</u></b>: +2 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Webpage mock-up designs prototyping as an Adobe Xd substitute</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-production">
+                                <div class="post-production-card-container">
+                                    <div class="post-production-title-cell">
+                                        <p class="title-post-production-card-container">Video Post-production</p>
+                                    </div>
+                                    <div class="flip-card" id="card-pr">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/pr.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back pr-au-ae-fill white-text">
+                                                <h1>Adobe Premiere Pro</h1>
+                                                <p><b><u>Level</u></b>: +Experienced</p>
+                                                <p><b><u>Time use</u></b>: +5 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Content creation</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-au">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/au.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back pr-au-ae-fill white-text">
+                                                <h1>Adobe Audition</h1>
+                                                <p><b><u>Level</u></b>: +Competent</p>
+                                                <p><b><u>Time use</u></b>: +1 year</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Content creation</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-ae">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/ae.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back pr-au-ae-fill white-text">
+                                                <h1>Adobe After Effects</h1>
+                                                <p><b><u>Level</u></b>: +Competent</p>
+                                                <p><b><u>Time use</u></b>: +1 year</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Content creation</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="databases">
+                                <div class="databases-card-container">
+                                    <div class="databases-title-cell">
+                                        <p class="title-databases-card-container">Database Administration</p>
+                                    </div>
+                                    <div class="flip-card" id="card-mysql">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/mysql.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back mysql-fill">
+                                                <h1>MySQL</h1>
+                                                <p><b><u>Level</u></b>: +Competent</p>
+                                                <p><b><u>Time use</u></b>: +1 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Backend Web development</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-postgre">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/postgre.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back postgre-fill white-text">
+                                                <h1>PostgreSQL</h1>
+                                                <p><b><u>Level</u></b>: +Compentent</p>
+                                                <p><b><u>Time use</u></b>: +1 year</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Backend Web development</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-neo4j">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/neo4j.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back neo4j-fill white-text">
+                                                <h1>Neo4j</h1>
+                                                <p><b><u>Level</u></b>: Compentent</p>
+                                                <p><b><u>Time use</u></b>: +6 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Research and Experimentation</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="honorable-mentions">
+                                <div class="honorable-mentions-card-container">
+                                    <div class="honorable-mentions-title-cell">
+                                        <p class="title-honorable-mentions-card-container">Honorable mentions</p>
+                                    </div>
+                                    <div class="flip-card" id="card-c">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/c.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back c-fill black-text">
+                                                <h1>C</h1>
+                                                <p><b><u>Level</u></b>: +Compentent</p>
+                                                <p><b><u>Time use</u></b>: +2 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Teaching/Educational purposes. Teaching the basics up to pointers and data structures.</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-php">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/php.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back php-fill white-text">
+                                                <h1>PHP</h1>
+                                                <p><b><u>Level</u></b>: +Compentent</p>
+                                                <p><b><u>Time use</u></b>: +6 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Backend web development</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-matlab">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/matlab.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back matlab-fill black-text">
+                                                <h1>MATLAB</h1>
+                                                <p><b><u>Level</u></b>: +Compentent</p>
+                                                <p><b><u>Time use</u></b>: +4 years</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Statistics, Digital Signal and Image processing purposes</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="others">
+                                <div class="others-card-container">
+                                    <div class="others-mentions-title-cell">
+                                        <p class="title-others-card-container">Others</p>
+                                    </div>
+                                    <div class="flip-card" id="card-java">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/java.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back java-fill black-text">
+                                                <h1>Java</h1>
+                                                <p><b><u>Level</u></b>: Compentent</p>
+                                                <p><b><u>Time use</u></b>: +1 year</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Beginner Object Oriented Programming learning</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-cplusplus">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/cx2plus.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back cx2plus-fill white-text">
+                                                <h1>C++</h1>
+                                                <p><b><u>Level</u></b>: +Novice</p>
+                                                <p><b><u>Time use</u></b>: +6 months</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Educational/Teaching purposes</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="flip-card" id="card-3dsmax">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="media/img/metrics/3dsmax.png" alt="no-image" style="width:200px;height:200px;">
+                                            </div>
+                                            <div class="flip-card-back dsmax-fill black-text">
+                                                <h1>3DS Max</h1>
+                                                <p><b><u>Level</u></b>: Compentent</p>
+                                                <p><b><u>Time use</u></b>: +1 year</p>
+                                                <b><u>General use</u>:</b>
+                                                <p class="additional">Learning the basis of 3D modelling</p>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="services">
+                        <div class="title-services">
+                            <p>Services</p>
+                        </div>
+                    </div>
+                    <div id="availability">
+                        <div class="title-availability">
+                            <p>Availability</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!--
+    <aside></aside>
+    --> 
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2022 Wesley Lucas Mas, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/functions.js" src="scrollProgress.js"></script>
+    <script src="js/functions.js" src="showUniversityImages.js"></script>
+    <script src="js/functions.js" src="showConservatoryImages.js"></script>
+</body>
+</html>

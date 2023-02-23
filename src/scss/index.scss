@@ -1,0 +1,1316 @@
+@font-face {
+    font-family: "myFirstFont";
+    src:url('/src/fonts/edosz.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "mySecondFont";
+    src:url('/src/fonts/AphasiaBTRoman.ttf') format('truetype');
+}
+
+html{
+    font-family: 'mySecondFont', system-ui;;
+    background-size: cover;
+
+    body{
+        margin: 0em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        header{
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            width: 100%;
+            height: 11%;
+            background: linear-gradient(334deg, #f3008d 0%, #00004e 100%);
+            box-shadow: 0em 0em 20px 0px white;
+            z-index: 1;
+            justify-content: flex-end;
+
+            .main-header{
+                font-size: 1.1em;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                position: fixed;
+                width: 100%;
+                height: 11%;
+                z-index: 1;
+
+                .left-header{
+                    ul{
+                        margin-top: 0em;
+                        margin-bottom: 0em;
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0em;
+                        align-items: center;
+                        #linkedin{
+                            margin: 0em 1em 0em 0.75em;
+    
+                            .fa.fa-linkedin-square{
+                                cursor: pointer;
+                                width: 22px;
+                                height: auto;
+                                margin: 0em;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                                
+                                &:hover{
+                                    filter: invert(28%) sepia(48%) saturate(6781%) hue-rotate(185deg) brightness(91%) contrast(102%);
+                                }
+                            }
+                        }
+                        #business-contact{
+                            margin: 0em 1em 0em 1em;
+                            a{
+                                text-decoration: none;
+                                .fa.fa-envelope{
+                                    width: 22px;
+                                    height: auto;
+                                    cursor: pointer;
+                                    margin: 0em;
+                                    filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                                }
+                                .fa-solid.fa-envelope-open-text{
+                                    width: 22px;
+                                    height: auto;
+                                    cursor: pointer;
+                                    margin: 0em;
+                                    top: 0px;
+                                    position: relative;
+                                    filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                                }
+                                &:hover .fa.fa-envelope,
+                                & .fa-solid.fa-envelope-open-text {
+                                    display: none;
+                                }
+                                &:hover .fa-solid.fa-envelope-open-text {
+                                    display: inline;
+                                }
+                            }
+                        }
+                        #download-cv{
+                            margin: 0em 1em 0em 0.75em;
+                            .fas.fa-download{
+                                cursor: pointer;
+                                width: 22px;
+                                height: auto;              
+                                margin: 0em;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                            }
+                        }
+                    }
+                }
+    
+                .center-header{    
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0em;
+                        margin: 0em;
+                        
+                        div{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin-top: 0.5em;
+                            margin-bottom: 0.5em;
+                            margin-left: 1em;
+                            margin-right: 1em;
+    
+                            .fa-solid.fa-circle-user.fa-lg{
+                                width: 25px;
+                                height: auto;
+                                margin-right: 5.5px;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                            }
+    
+                            .fa-solid.fa-graduation-cap.fa-lg{
+                                width: 30px;
+                                height: auto;
+                                margin-right: 5.5px;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                            }
+    
+                            .fa-solid.fa-diagram-project.fa-lg{
+                                width: 26px;
+                                height: auto;
+                                margin-right: 5.5px;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                            }
+    
+                            .fa-solid.fa-layer-group.fa-lg{
+                                width: 25px;
+                                height: auto;
+                                margin-right: 5.5px;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                            }
+    
+                            .fa-solid.fa-handshake-angle.fa-lg{
+                                width: 30px;
+                                height: auto;
+                                margin-right: 2.5px;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                            }
+                            
+                            .fa-solid.fa-calendar-check.fa-lg{
+                                width: 21px;
+                                height: auto;
+                                margin-right: 5px;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                            }
+    
+                            a{
+                                text-decoration:none;
+                                margin: -1em 0.5em -1em 0.5em;
+                                display: flex;
+                                flex-direction: row;
+                                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+                                transition: all 0.2s ease-in-out;
+                                
+                                &:hover{
+                                    text-shadow: 0px 0px 20px black;
+                                    filter: drop-shadow(0px 0px 5px black);
+                                }
+    
+                                p{
+                                    margin-left: 5.5px;
+                                    background-color: transparent;
+                                    color: #e7e7e7;
+                                }
+                            }
+                        }          
+                    }
+                }
+                .right-header{
+                    ul{
+                        margin-top: 0em;
+                        margin-bottom: 0em;
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0em;
+                        align-items: center;
+                        #github{
+                            margin: 0em 1em 0em 1em;
+    
+                            .fa.fa-github{
+                                cursor: pointer;
+                                width: 24px;
+                                height: auto;
+                                margin: 0em;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                                &:hover{
+                                    filter: invert(2%) sepia(35%) saturate(319%) hue-rotate(314deg) brightness(96%) contrast(87%);
+                                }
+                            }
+                        }
+                        
+                        #codepen{
+                            margin: 0em 1em 0em 1em;
+                            .fab.fa-codepen{
+                                cursor: pointer;
+                                width: 24px;
+                                height: auto;
+                                margin: 0em;
+                                filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+                                &:hover{
+                                    filter: invert(0%) sepia(75%) saturate(22%) hue-rotate(26deg) brightness(98%) contrast(105%);
+                                }
+                            }
+                        }
+    
+                        #figma{
+                            margin: 0em 1.5em 0em 1em;
+                            .wrapper {
+                                cursor: pointer;
+                                margin: 0em;
+                                
+                                .logo {
+                                    width: 15px;
+                                    height: 22.5px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+    
+                                    .part {
+                                        width:7.5px;
+                                        height:7.5px;
+                                        //background: red;
+                                        background: #e7e7e7;
+                                    }
+    
+                                    .red {
+                                        border-top-left-radius:50px;
+                                        border-bottom-left-radius:50px;
+                                        //background: #EE4E2A;
+                                        background: #e7e7e7;
+                                    }
+    
+                                    &:hover > .red{
+                                        background: #EE4E2A;
+                                        box-shadow: 0px 0px 3px 0px black;
+                                    }
+    
+                                    .light-red {
+                                        border-top-right-radius:50px;
+                                        border-bottom-right-radius:50px;
+                                        //background: #FB7266;
+                                        background: #e7e7e7;
+                                    }
+    
+                                    &:hover > .light-red{
+                                        background: #FB7266;
+                                        box-shadow: 0px 0px 3px 0px black;
+                                    }
+    
+                                    .purple {
+                                        border-top-left-radius:50px;
+                                        border-bottom-left-radius:50px;
+                                        //background: #A061FA;
+                                        background: #e7e7e7;
+                                    }
+    
+                                    &:hover > .purple{
+                                        background: #A061FA;
+                                        box-shadow: 0px 0px 3px 0px black;
+                                    }
+    
+                                    .blue-sky {
+                                        border-radius:50px;
+                                        //background: #2EBDFA;
+                                        background: #e7e7e7;
+                                    }
+    
+                                    &:hover > .blue-sky{
+                                        background: #2EBDFA;
+                                        box-shadow: 0px 0px 3px 0px black;
+                                    }
+    
+                                    .green-slime {
+                                        //background: #00CE84;
+                                        border-top-left-radius:50px;
+                                        border-bottom-left-radius:50px;
+                                        border-bottom-right-radius:50px;
+                                        background: #e7e7e7;
+                                    }
+    
+                                    &:hover > .green-slime{
+                                        background: #00CE84;
+                                        box-shadow: 0px 0px 3px 0px black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* The progress container (grey background) */
+            .progress-container {
+                width: 100%;
+                height: 8px;
+                background: #000;
+            }
+            /* The progress bar (scroll indicator) */
+            .progress {
+                height: 8px;
+                background: #ff0065;
+                width: 0%;
+            }
+        }
+        main{
+            margin-top: 4.6%; //margin-top: 70px;
+
+            article{
+                margin: 0em;
+
+                section{
+                    .container{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 9999em;
+                        height: auto;
+                        
+                        #about-me{
+                            display: flex;
+                            width: 105%;
+                            height: auto;
+                            align-items: center;
+                            background-image: url(../media/img/extra/neon-tokyo-75.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-top: 6em;
+                            padding-bottom: 6em;
+                            -moz-background-size: cover;
+                            -webkit-background-size: cover;
+                            -o-background-size: cover;
+
+                            .general-title{
+                                p{
+                                    color: #f7f7f7;
+                                    font-size: 7em;
+                                    text-shadow: 6px 4px 0px #303030;
+                                    margin: 0px;
+                                }
+                            }
+
+                            .profile-intro{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: flex-start;
+                                .about-me-info{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    .title{
+                                        p{
+                                            color: white;
+                                            font-size: xx-large;
+                                        }
+                                    }
+                                    .description{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        p{
+                                            color: white,
+                                        }
+                                    }
+                                }
+                                .about-me-extra-info{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    img {
+                                        width: auto; 
+                                        height: 20em; 
+                                    }
+                                    p{
+                                        color: white;
+                                    }
+                                }
+                            }  
+                        }
+
+                        #education{
+                            display: flex;
+                            width: 105%;
+                            height: auto;
+                            align-items: center;
+                            background-image: url(../media/img/extra/barcelona-night-66.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-top: 6em;
+                            padding-bottom: 6em;
+
+                            .title-education{
+                                p{
+                                    color: #f7f7f7;
+                                    font-size: 7em;
+                                    text-shadow: 6px 4px 0px #303030;
+                                    margin: 0px;
+                                    margin-bottom: 0.5em;
+                                }
+                            }
+
+                            .section-line{
+                                font-family: system-ui;
+                                margin: 0.75em;
+                                font-weight: 600;
+                                border-bottom: 2px solid #d9d9d9;
+                                padding-bottom: 0.5em;
+                                margin-bottom: 3em;
+                                p{
+                                    color: #f7f7f7;
+                                    margin: 0px;
+                                    width: 85em;
+                                    text-align: center;
+                                }
+                            }
+
+                            .institutions{
+                                font-family: system-ui;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                
+                                .university{
+                                    margin-bottom: 4em;
+                                    box-shadow: 0px 0px 20px 1px rgb(255 255 255 / 33%);
+                                }
+
+                                .honors{
+                                    display:flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    
+                                    .web, .video, .physics{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin-left: 1.4em;
+                                        margin-right: 1.4em;
+                                        box-shadow: 0px 0px 20px 1px rgb(255 255 255 / 33%);
+
+                                        h1{
+                                            background: linear-gradient(94deg, #BF953F 0%, #FCF6BA 50%, #BF953F 100%);
+                                            color: black;
+                                            margin: 0px;
+                                            padding-top:0.5em;
+                                            padding-bottom: 0.5em;
+                                            width:328.2px;
+                                            text-align: center;
+                                            font-size: 18px;
+                                        }
+
+                                        .img{
+                                            background: white;
+                                            padding-left: 4.25em;
+                                            padding-right: 4.25em;
+                                            padding-top: 1.5em;
+                                            padding-bottom: 1.5em;
+
+                                            .svg-web, .svg-video, .svg-physics{
+                                                width: 12em;
+                                                filter: invert(0%) sepia(6%) saturate(25%) hue-rotate(203deg) brightness(100%) contrast(106%);
+                                            }
+                                        }       
+                                        .text{
+                                            background: rgba(0, 0, 0, 0.66);
+                                            color: white;
+                                            margin: 0px;
+                                            padding-left: 1em;
+                                            padding-right: 1em;
+                                            padding-top: 1em;
+                                            padding-bottom: 1em;
+                                            width: 18.51em;
+                                            height: 35em;
+                                            text-align: left;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+
+                                            .description{
+                                                margin-top:0px;
+                                                margin-bottom:1.5em;
+                                            }
+
+                                            .date{
+                                                color: #ffffff80;
+                                                font-size: 11px; 
+                                                margin: 0px;
+                                                text-align: end;   
+                                            }
+                                        }  
+                                    }
+                                }
+
+                                .music-conservatory{
+                                    margin-top: 4em;
+                                }
+                                
+                                .university, .music-conservatory{
+                                    display: flex;
+                                    border-radius: 0.75em;
+
+                                    .image-container {
+                                        position: relative;
+                                        width: 40em;
+                                        border-top-left-radius: 0.75em;
+                                        border-bottom-left-radius: 0.75em;
+
+                                        .myUniversityImages, .myConservatoryImages{
+                                            img{
+                                                float: left;
+                                                width: 100%;
+                                                height: 235px;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                    
+                                    .active {
+                                        background-color: #717171;
+                                    }
+                                    
+                                    .fade {
+                                        animation-name: fade;
+                                        animation-duration: 1.5s;
+                                    }
+                                    
+                                    @keyframes fade {
+                                        from {opacity: 1} 
+                                        to {opacity: 1}
+                                    }
+
+                                    .extra{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: stretch;
+                                        img{
+                                                height: 6em;
+                                                width: 25em;
+                                                padding: 1em;
+                                                background: white;
+                                        }
+                                        .info{
+                                            background: rgba(0, 0, 0, 0.66);
+                                            height: auto;
+                                            display: flex;
+                                            align-items: flex-start;
+                                            flex-direction: column;
+                                            padding-left: 2em;
+                                            padding-right: 2em;
+                                            justify-content: center;
+                                            color: white;
+                                            padding-top: 1em;
+                                            padding-bottom: 1em;
+
+                                            h1{
+                                                margin:0px;
+                                                margin-bottom: 0.15em;
+                                            } 
+                                            p{
+                                                margin:0px;
+                                                margin-top: 0.15em;
+                                            }
+                                            .date{
+                                                color: #ffffff80;
+                                                font-size: 14px;
+                                                margin-top: 0.35em;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .cambridge{
+                                    margin-top: 4em;
+                                    margin-bottom: 4em;
+
+
+                                    .first-certificate{
+                                        display: flex;
+                                        box-shadow: 0px 0px 20px 1px rgb(255 255 255 / 33%);
+
+                                        img{
+                                            width: 31em;
+                                            height: auto;
+                                            background: white;
+                                            padding: 0.5em;
+                                            padding-left: 1.5em;
+                                            padding-right: 1.5em;
+                                        }
+
+                                        .info{
+                                            color: white;
+                                            background: rgba(0, 0, 0, 0.66);
+                                            padding-top: 1em;
+                                            padding-bottom: 1em;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            padding-left: 2em;
+                                            padding-right: 2.5em;
+
+                                            h1{
+                                                margin:0px;
+                                                margin-bottom: 0.15em;
+                                            } 
+                                            p{
+                                                margin:0px;
+                                                margin-top: 0.15em;
+                                            }
+                                            .date{
+                                                color: #ffffff80;
+                                                font-size: 14px;
+                                                margin-top: 0.35em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .languages{
+                                .lang-container{
+                                    display: flex;
+                                    flex-direction: row;  
+
+                                    div{
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        margin-left: 2em;
+                                        margin-right: 2em;
+
+                                        img{
+                                            width: 9em;
+                                            height: 9em;
+                                            margin-right: 1em;
+                                        }
+                                        div {
+                                            display: flex;
+                                            flex-direction: column;
+                                            margin-left: 0em;
+                                            margin-right: 0em;
+                                            align-items: flex-start;
+                                            h1{
+                                                font-size: 2em;
+                                                color: white;
+                                                margin: 0em;
+                                                margin-bottom: 0.25em;
+                                            }
+                                            div{
+                                                display: flex;
+                                                font-family: system-ui;
+                                                p{
+                                                    margin: 0.25em;
+                                                    color: white;
+                                                    margin-top: 0em;
+                                                    margin-bottom: 0em;
+                                                    font-size: 1.15em;
+
+                                                    &:nth-child(2) {
+                                                        font-size: 1.25em;
+                                                        font-weight: 600;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        #career{
+                            display: flex;
+                            width: 105%;
+                            height: auto;
+                            align-items: center;
+                            background-image: url(../media/img/extra/experiences-66.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-top: 6em;
+                            padding-bottom: 6em;
+
+                            .title-experience{
+                                p{
+                                    color: #f7f7f7;
+                                    font-size: 7em;
+                                    text-shadow: 6px 4px 0px #303030;
+                                    margin: 0px;
+                                    margin-bottom: 0.5em;
+                                }
+                            }
+
+                            .timeline{
+                                font-family: system-ui;
+                                margin: 0.75em;
+                                font-weight: 600;
+                                p{
+                                    color: #f7f7f7;
+                                    margin: 0px;
+                                    width: 85em;
+                                }
+                            }
+
+                            .experiences{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                border-top: 1px solid #d9d9d9;
+                                padding-top: 1.5em;
+                                font-family: system-ui;
+
+                                .exp-container{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: flex-start;
+                                    margin-top: 1em;
+                                    margin-bottom: 2em;
+
+                                    .exp{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin-right: 1em;
+                                        margin-left: 1em;
+                                        color: white;
+                                        box-shadow: 0px 1px 20px 1px rgb(255 255 255 / 33%);
+    
+                                        img{
+                                            width: 27em;
+                                            height: auto;
+                                            //margin-bottom: 0.5em;
+                                        }
+    
+                                        .content{
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            background: rgb(0 0 0 / 66%);
+                                            padding: 1em;
+                                            padding-left: 1.5em;
+                                            padding-right: 1.5em;
+    
+                                            .job-title{
+                                                margin-top: 0.5em;
+                                                margin-bottom: 0.5em;
+                                                h2{
+                                                    margin:0em;
+                                                    font-size: 19.35px;
+                                                }
+                                                h3{
+                                                    margin:0em;
+                                                    font-size: 21px;
+                                                }
+                                            }
+
+                                            .job-extra{
+                                                p{
+                                                    margin:0em;
+                                                    font-size: 14px;
+                                                }
+                                            }
+
+                                            .job-details{
+                                                width: 24em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        #skills{
+                            display: flex;
+                            width: 105%;
+                            height: auto;
+                            align-items: center;
+                            background-image: url(../media/img/extra/postproduction-66.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-top: 6em;
+                            padding-bottom: 6em;
+
+                            .title-skills{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                p{
+                                    color: #f7f7f7;
+                                    font-size: 7em;
+                                    margin: 0px;
+                                    margin-bottom: 0.5em;
+                                }
+
+                                .metrics{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    border-top: 1px solid rgb(217, 217, 217);
+                                    border-bottom: 1px solid rgb(217, 217, 217);
+                                    padding-top: 1.5em;
+                                    padding-bottom: 1.5em;
+                                }
+
+                                .metrics > div{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    width: 12em;
+                                    height: 26em;
+                                    margin-top: 1.5em;
+                                    margin-bottom: 1.5em;
+                                    margin-right: 3em;
+                                    margin-left: 3em;
+                                    background: #191919;
+                                    padding: 1em;
+                                    padding-left: 2em;
+                                    padding-right: 2em;
+                                    border-radius: 0.5em;
+                                    box-shadow: 0px 0px 10px 0px white;
+                                }
+
+                                .metrics > div > p{
+                                    margin-bottom: 0px;
+                                    margin-top: 0.5em;
+                                    margin-bottom: 0.5em;
+                                    font-size: 15px;
+                                }
+
+                                div > img{
+                                    width: 150px;
+                                    height: auto;
+                                }
+
+                                .metrics > div > h2{
+                                    color: #f7f7f7;
+                                    font-size: 1.5em;
+                                    margin-bottom: 0.5em;
+                                    margin-top: 0.5em;
+                                }
+
+                                .metrics > div > .descr{
+                                    color: #f7f7f7;
+                                    font-size: 15px;
+                                    text-align: center;
+                                    font-family: system-ui;
+                                    width: 14em;
+                                    height: auto;
+                                }
+
+                                .metrics > div > .statement{
+                                    color: #f7f7f7;
+                                    font-size: 14px;
+                                    text-align: center;
+                                    font-family: system-ui;
+                                    width: 14em;
+                                    height: auto;
+                                }
+                            }
+                            
+                            .card-grid{
+                                display: grid;
+                                grid-template-rows: auto auto auto auto;
+                                column-gap: 1.5em;
+                                margin-bottom: 4em;
+                                justify-items: start;
+    
+                                .frontend-web{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding: 1.5em;
+                                    margin-top: 1.5em;
+
+                                    .title-frontend-web-card-container{
+                                        font-size: xx-large;
+                                        color: white;
+                                    }
+    
+                                    .frontend-web-card-container{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                        justify-items: center;
+                                        align-items: center;
+
+                                        .frontend-title-cell{
+                                            background-color: transparent;
+                                            width: 200px;
+                                            height: 200px;
+                                            margin: 1em;
+                                            margin-left: 1em;
+                                            margin-right: 1em;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+
+                                .ui-ux-design{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding: 1.5em;
+    
+                                    .title-ui-ux-design-card-container{
+                                        font-size: xx-large;
+                                        color: white;
+                                    }
+                                    
+                                    .ui-ux-design-card-container{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                        justify-items: center;
+                                        align-items: center;
+
+                                        .ui-ux-design-title-cell{
+                                            background-color: transparent;
+                                            width: 200px;
+                                            height: 200px;
+                                            margin: 1em;
+                                            margin-left: 1em;
+                                            margin-right: 1em;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+    
+                                .post-production{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding: 1.5em;
+
+                                    .title-post-production-card-container{
+                                        font-size: xx-large;
+                                        color: white;
+                                    }
+    
+                                    .post-production-card-container{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                        justify-items: center;
+                                        align-items: center;
+
+                                        .post-production-title-cell{
+                                            background-color: transparent;
+                                            width: 200px;
+                                            height: 200px;
+                                            margin: 1em;
+                                            margin-left: 1em;
+                                            margin-right: 1em;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+    
+                                .databases{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding: 1.5em;
+
+                                    .title-databases-card-container{
+                                        font-size: xx-large;
+                                        color: white;
+                                    }
+    
+                                    .databases-card-container{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                        justify-items: center;
+                                        align-items: center;
+
+                                        .databases-title-cell{
+                                            background-color: transparent;
+                                            width: 200px;
+                                            height: 200px;
+                                            margin: 1em;
+                                            margin-left: 1em;
+                                            margin-right: 1em;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+
+                                .honorable-mentions{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding: 1.5em;
+
+                                    .title-honorable-mentions-card-container{
+                                        font-size: xx-large;
+                                        color: white;
+                                    }
+    
+                                    .honorable-mentions-card-container{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                        justify-items: center;
+                                        align-items: center;
+
+                                        .honorable-mentions-title-cell{
+                                            background-color: transparent;
+                                            width: 200px;
+                                            height: 200px;
+                                            margin: 1em;
+                                            margin-left: 1em;
+                                            margin-right: 1em;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+
+                                .others{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    padding: 1.5em;
+                                    margin-bottom: 1.5em;
+
+                                    .title-others-card-container{
+                                        font-size: xx-large;
+                                        color: white;
+                                    }
+    
+                                    .others-card-container{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                        justify-items: center;
+                                        align-items: center;
+
+                                        .others-title-cell{
+                                            background-color: transparent;
+                                            width: 200px;
+                                            height: 200px;
+                                            margin: 1em;
+                                            margin-left: 1em;
+                                            margin-right: 1em;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+
+                             /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+                            .flip-card {
+                                background-color: transparent;
+                                width: 200px;
+                                height: 200px;
+                                perspective: 1000px; /* Remove this if you don't want the 3D effect */
+                                margin: 1em;
+                                margin-left: 1.25em;
+                                margin-right: 1.25em;
+                            }
+                            
+                            /* This container is needed to position the front and back side */
+                            .flip-card-inner {
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                transition: transform 0.25s;
+                                transform-style: preserve-3d;
+                            }
+
+                            .flip-card-back > p, .flip-card-back > b{
+                                font-family: system-ui;
+                            }
+                            
+                            /* Do an horizontal flip when you move the mouse over the flip box container */
+                            .flip-card:hover .flip-card-inner {
+                                transform: rotateY(180deg);
+                            }
+                            
+                            /* Position the front and back side */
+                            .flip-card-front, .flip-card-back {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                -webkit-backface-visibility: hidden; /* Safari */
+                                backface-visibility: hidden;
+                            }
+                            
+                            /* Style the front side (fallback if image is missing) */
+                            .flip-card-front {
+                                background-color: transparent;
+                                color: black;
+                            }
+                            
+                            /* Style the back side */
+                            .flip-card-back {
+                                transform: rotateY(180deg);
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                box-shadow: none;
+                                transition: box-shadow 0.25s;
+
+                                &:hover{
+                                    box-shadow: 0px 0px 10px 5px white;
+                                }
+
+                                h1{
+                                    margin-bottom: 0.5em;
+                                }
+                            }
+                            
+                            .flip-card-back > *{
+                                margin: 0.075em;
+                            }
+
+                            .flip-card-back > .additional{
+                                font-size: 15px;
+                                margin-top: 0.15em;
+                                margin-left: 1em;
+                                margin-right: 1em;
+                            }
+
+                            .flip-card-back > b{
+                                margin-bottom: 0em;
+                            }
+
+                            .white-text{
+                                color: white;
+                            }
+                            .black-text{
+                                color: black;
+                            }
+                            .html-fill {
+                                background-color: #ef652a;
+                            }
+                            .css-fill {
+                                background-color: #0089ca;
+                            }
+                            .js-fill {
+                                background-color: #fdd83c;
+                            }
+                            .vue-fill {
+                                background-color: #41b883;
+                            }
+                            .sass-fill {
+                                background-color: #cd6799;
+                            }
+                            .ai-fill {
+                                background-color: #ff9a00;
+                            }
+                            .xd-fill {
+                                background-color: #ff61f6;
+                            }
+                            .ps-fill {
+                                background-color: #31a8ff;
+                            }
+                            .figma-fill {
+                                background-color: #2c2d35;
+                            }
+                            .pr-au-ae-fill {
+                                background-color: #00005b;
+                            }
+                            .mysql-fill {
+                                background-color: #f29111;
+                            }
+                            .postgre-fill {
+                                background-color: #336791;
+                            }
+                            .neo4j-fill {
+                                background-color: #005f50;
+                            }
+                            .c-fill {
+                                background-color: #a8c2ff;
+                            }
+                            .php-fill {
+                                background-color: #8993be;
+                            }
+                            .matlab-fill {
+                                background-color: #ffc26a;
+                            }
+                            .java-fill {
+                                background-color: #ffda9f;
+                            }
+                            .cx2plus-fill {
+                                background-color: #0081bf;
+                            }
+                            .dsmax-fill {
+                                background-color: #1ecfdc;
+                            }
+                        }
+    
+                        #services{
+                            display: flex;
+                            width: 105%;
+                            height: auto;
+                            align-items: center;
+                            background-image: url(../media/img/extra/services-66.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-top: 6em;
+                            padding-bottom: 6em;
+
+                            .title-services{
+                                p{
+                                    color: #f7f7f7;
+                                    font-size: 7em;
+                                    text-shadow: 6px 4px 0px #303030;
+                                    margin: 0px;
+                                }
+                            }
+                        }
+    
+                        #availability{
+                            display: flex;
+                            width: 105%;
+                            height: auto;
+                            align-items: center;
+                            background-image: url(../media/img/extra/availability-66.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-top: 6em;
+                            padding-bottom: 6em;
+
+                            .title-availability{
+                                p{
+                                    color: #f7f7f7;
+                                    font-size: 7em;
+                                    text-shadow: 6px 4px 0px #303030;
+                                    margin: 0px;
+                                }
+                            }
+                        }
+                        
+                    } 
+                }
+            }
+        }
+        footer{
+            font-size: 1.1em;
+            display: flex;
+            width: 102%;
+            height: auto;
+            background: linear-gradient(334deg, #f3008d 0%, #00004e 100%);
+            box-shadow: 0em 0em 20px 0px white;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .copyright{
+                color: white;
+            }
+        }
+    }
+}

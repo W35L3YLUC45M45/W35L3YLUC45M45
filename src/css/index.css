@@ -1,0 +1,1152 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("/src/fonts/edosz.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mySecondFont";
+  src: url("/src/fonts/AphasiaBTRoman.ttf") format("truetype");
+}
+html {
+  font-family: "mySecondFont", system-ui;
+  background-size: cover;
+}
+html body {
+  margin: 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html body::-webkit-scrollbar {
+  display: none;
+}
+html body header {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 11%;
+  background: linear-gradient(334deg, #f3008d 0%, #00004e 100%);
+  box-shadow: 0em 0em 20px 0px white;
+  z-index: 1;
+  justify-content: flex-end;
+  /* The progress container (grey background) */
+  /* The progress bar (scroll indicator) */
+}
+html body header .main-header {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  height: 11%;
+  z-index: 1;
+}
+html body header .main-header .left-header ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  display: flex;
+  flex-direction: row;
+  padding: 0em;
+  align-items: center;
+}
+html body header .main-header .left-header ul #linkedin {
+  margin: 0em 1em 0em 0.75em;
+}
+html body header .main-header .left-header ul #linkedin .fa.fa-linkedin-square {
+  cursor: pointer;
+  width: 22px;
+  height: auto;
+  margin: 0em;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .left-header ul #linkedin .fa.fa-linkedin-square:hover {
+  filter: invert(28%) sepia(48%) saturate(6781%) hue-rotate(185deg) brightness(91%) contrast(102%);
+}
+html body header .main-header .left-header ul #business-contact {
+  margin: 0em 1em 0em 1em;
+}
+html body header .main-header .left-header ul #business-contact a {
+  text-decoration: none;
+}
+html body header .main-header .left-header ul #business-contact a .fa.fa-envelope {
+  width: 22px;
+  height: auto;
+  cursor: pointer;
+  margin: 0em;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .left-header ul #business-contact a .fa-solid.fa-envelope-open-text {
+  width: 22px;
+  height: auto;
+  cursor: pointer;
+  margin: 0em;
+  top: 0px;
+  position: relative;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .left-header ul #business-contact a:hover .fa.fa-envelope, html body header .main-header .left-header ul #business-contact a .fa-solid.fa-envelope-open-text {
+  display: none;
+}
+html body header .main-header .left-header ul #business-contact a:hover .fa-solid.fa-envelope-open-text {
+  display: inline;
+}
+html body header .main-header .left-header ul #download-cv {
+  margin: 0em 1em 0em 0.75em;
+}
+html body header .main-header .left-header ul #download-cv .fas.fa-download {
+  cursor: pointer;
+  width: 22px;
+  height: auto;
+  margin: 0em;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .center-header ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0em;
+  margin: 0em;
+}
+html body header .main-header .center-header ul div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+html body header .main-header .center-header ul div .fa-solid.fa-circle-user.fa-lg {
+  width: 25px;
+  height: auto;
+  margin-right: 5.5px;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .center-header ul div .fa-solid.fa-graduation-cap.fa-lg {
+  width: 30px;
+  height: auto;
+  margin-right: 5.5px;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .center-header ul div .fa-solid.fa-diagram-project.fa-lg {
+  width: 26px;
+  height: auto;
+  margin-right: 5.5px;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .center-header ul div .fa-solid.fa-layer-group.fa-lg {
+  width: 25px;
+  height: auto;
+  margin-right: 5.5px;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .center-header ul div .fa-solid.fa-handshake-angle.fa-lg {
+  width: 30px;
+  height: auto;
+  margin-right: 2.5px;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .center-header ul div .fa-solid.fa-calendar-check.fa-lg {
+  width: 21px;
+  height: auto;
+  margin-right: 5px;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .center-header ul div a {
+  text-decoration: none;
+  margin: -1em 0.5em -1em 0.5em;
+  display: flex;
+  flex-direction: row;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+html body header .main-header .center-header ul div a:hover {
+  text-shadow: 0px 0px 20px black;
+  filter: drop-shadow(0px 0px 5px black);
+}
+html body header .main-header .center-header ul div a p {
+  margin-left: 5.5px;
+  background-color: transparent;
+  color: #e7e7e7;
+}
+html body header .main-header .right-header ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  display: flex;
+  flex-direction: row;
+  padding: 0em;
+  align-items: center;
+}
+html body header .main-header .right-header ul #github {
+  margin: 0em 1em 0em 1em;
+}
+html body header .main-header .right-header ul #github .fa.fa-github {
+  cursor: pointer;
+  width: 24px;
+  height: auto;
+  margin: 0em;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .right-header ul #github .fa.fa-github:hover {
+  filter: invert(2%) sepia(35%) saturate(319%) hue-rotate(314deg) brightness(96%) contrast(87%);
+}
+html body header .main-header .right-header ul #codepen {
+  margin: 0em 1em 0em 1em;
+}
+html body header .main-header .right-header ul #codepen .fab.fa-codepen {
+  cursor: pointer;
+  width: 24px;
+  height: auto;
+  margin: 0em;
+  filter: invert(100%) sepia(6%) saturate(219%) hue-rotate(353deg) brightness(110%) contrast(81%);
+}
+html body header .main-header .right-header ul #codepen .fab.fa-codepen:hover {
+  filter: invert(0%) sepia(75%) saturate(22%) hue-rotate(26deg) brightness(98%) contrast(105%);
+}
+html body header .main-header .right-header ul #figma {
+  margin: 0em 1.5em 0em 1em;
+}
+html body header .main-header .right-header ul #figma .wrapper {
+  cursor: pointer;
+  margin: 0em;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo {
+  width: 15px;
+  height: 22.5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo .part {
+  width: 7.5px;
+  height: 7.5px;
+  background: #e7e7e7;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo .red {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background: #e7e7e7;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo:hover > .red {
+  background: #EE4E2A;
+  box-shadow: 0px 0px 3px 0px black;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo .light-red {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: #e7e7e7;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo:hover > .light-red {
+  background: #FB7266;
+  box-shadow: 0px 0px 3px 0px black;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo .purple {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background: #e7e7e7;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo:hover > .purple {
+  background: #A061FA;
+  box-shadow: 0px 0px 3px 0px black;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo .blue-sky {
+  border-radius: 50px;
+  background: #e7e7e7;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo:hover > .blue-sky {
+  background: #2EBDFA;
+  box-shadow: 0px 0px 3px 0px black;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo .green-slime {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: #e7e7e7;
+}
+html body header .main-header .right-header ul #figma .wrapper .logo:hover > .green-slime {
+  background: #00CE84;
+  box-shadow: 0px 0px 3px 0px black;
+}
+html body header .progress-container {
+  width: 100%;
+  height: 8px;
+  background: #000;
+}
+html body header .progress {
+  height: 8px;
+  background: #ff0065;
+  width: 0%;
+}
+html body main {
+  margin-top: 4.6%;
+}
+html body main article {
+  margin: 0em;
+}
+html body main article section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 9999em;
+  height: auto;
+}
+html body main article section .container #about-me {
+  display: flex;
+  width: 105%;
+  height: auto;
+  align-items: center;
+  background-image: url(../media/img/extra/neon-tokyo-75.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+html body main article section .container #about-me .general-title p {
+  color: #f7f7f7;
+  font-size: 7em;
+  text-shadow: 6px 4px 0px #303030;
+  margin: 0px;
+}
+html body main article section .container #about-me .profile-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+html body main article section .container #about-me .profile-intro .about-me-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body main article section .container #about-me .profile-intro .about-me-info .title p {
+  color: white;
+  font-size: xx-large;
+}
+html body main article section .container #about-me .profile-intro .about-me-info .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body main article section .container #about-me .profile-intro .about-me-info .description p {
+  color: white;
+}
+html body main article section .container #about-me .profile-intro .about-me-extra-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main article section .container #about-me .profile-intro .about-me-extra-info img {
+  width: auto;
+  height: 20em;
+}
+html body main article section .container #about-me .profile-intro .about-me-extra-info p {
+  color: white;
+}
+html body main article section .container #education {
+  display: flex;
+  width: 105%;
+  height: auto;
+  align-items: center;
+  background-image: url(../media/img/extra/barcelona-night-66.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+html body main article section .container #education .title-education p {
+  color: #f7f7f7;
+  font-size: 7em;
+  text-shadow: 6px 4px 0px #303030;
+  margin: 0px;
+  margin-bottom: 0.5em;
+}
+html body main article section .container #education .section-line {
+  font-family: system-ui;
+  margin: 0.75em;
+  font-weight: 600;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 0.5em;
+  margin-bottom: 3em;
+}
+html body main article section .container #education .section-line p {
+  color: #f7f7f7;
+  margin: 0px;
+  width: 85em;
+  text-align: center;
+}
+html body main article section .container #education .institutions {
+  font-family: system-ui;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main article section .container #education .institutions .university {
+  margin-bottom: 4em;
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.33);
+}
+html body main article section .container #education .institutions .honors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+html body main article section .container #education .institutions .honors .web, html body main article section .container #education .institutions .honors .video, html body main article section .container #education .institutions .honors .physics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.4em;
+  margin-right: 1.4em;
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.33);
+}
+html body main article section .container #education .institutions .honors .web h1, html body main article section .container #education .institutions .honors .video h1, html body main article section .container #education .institutions .honors .physics h1 {
+  background: linear-gradient(94deg, #BF953F 0%, #FCF6BA 50%, #BF953F 100%);
+  color: black;
+  margin: 0px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 328.2px;
+  text-align: center;
+  font-size: 18px;
+}
+html body main article section .container #education .institutions .honors .web .img, html body main article section .container #education .institutions .honors .video .img, html body main article section .container #education .institutions .honors .physics .img {
+  background: white;
+  padding-left: 4.25em;
+  padding-right: 4.25em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+html body main article section .container #education .institutions .honors .web .img .svg-web, html body main article section .container #education .institutions .honors .web .img .svg-video, html body main article section .container #education .institutions .honors .web .img .svg-physics, html body main article section .container #education .institutions .honors .video .img .svg-web, html body main article section .container #education .institutions .honors .video .img .svg-video, html body main article section .container #education .institutions .honors .video .img .svg-physics, html body main article section .container #education .institutions .honors .physics .img .svg-web, html body main article section .container #education .institutions .honors .physics .img .svg-video, html body main article section .container #education .institutions .honors .physics .img .svg-physics {
+  width: 12em;
+  filter: invert(0%) sepia(6%) saturate(25%) hue-rotate(203deg) brightness(100%) contrast(106%);
+}
+html body main article section .container #education .institutions .honors .web .text, html body main article section .container #education .institutions .honors .video .text, html body main article section .container #education .institutions .honors .physics .text {
+  background: rgba(0, 0, 0, 0.66);
+  color: white;
+  margin: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 18.51em;
+  height: 35em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body main article section .container #education .institutions .honors .web .text .description, html body main article section .container #education .institutions .honors .video .text .description, html body main article section .container #education .institutions .honors .physics .text .description {
+  margin-top: 0px;
+  margin-bottom: 1.5em;
+}
+html body main article section .container #education .institutions .honors .web .text .date, html body main article section .container #education .institutions .honors .video .text .date, html body main article section .container #education .institutions .honors .physics .text .date {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 11px;
+  margin: 0px;
+  text-align: end;
+}
+html body main article section .container #education .institutions .music-conservatory {
+  margin-top: 4em;
+}
+html body main article section .container #education .institutions .university, html body main article section .container #education .institutions .music-conservatory {
+  display: flex;
+  border-radius: 0.75em;
+}
+html body main article section .container #education .institutions .university .image-container, html body main article section .container #education .institutions .music-conservatory .image-container {
+  position: relative;
+  width: 40em;
+  border-top-left-radius: 0.75em;
+  border-bottom-left-radius: 0.75em;
+}
+html body main article section .container #education .institutions .university .image-container .myUniversityImages img, html body main article section .container #education .institutions .university .image-container .myConservatoryImages img, html body main article section .container #education .institutions .music-conservatory .image-container .myUniversityImages img, html body main article section .container #education .institutions .music-conservatory .image-container .myConservatoryImages img {
+  float: left;
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+}
+html body main article section .container #education .institutions .university .active, html body main article section .container #education .institutions .music-conservatory .active {
+  background-color: #717171;
+}
+html body main article section .container #education .institutions .university .fade, html body main article section .container #education .institutions .music-conservatory .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html body main article section .container #education .institutions .university .extra, html body main article section .container #education .institutions .music-conservatory .extra {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+html body main article section .container #education .institutions .university .extra img, html body main article section .container #education .institutions .music-conservatory .extra img {
+  height: 6em;
+  width: 25em;
+  padding: 1em;
+  background: white;
+}
+html body main article section .container #education .institutions .university .extra .info, html body main article section .container #education .institutions .music-conservatory .extra .info {
+  background: rgba(0, 0, 0, 0.66);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+  justify-content: center;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+html body main article section .container #education .institutions .university .extra .info h1, html body main article section .container #education .institutions .music-conservatory .extra .info h1 {
+  margin: 0px;
+  margin-bottom: 0.15em;
+}
+html body main article section .container #education .institutions .university .extra .info p, html body main article section .container #education .institutions .music-conservatory .extra .info p {
+  margin: 0px;
+  margin-top: 0.15em;
+}
+html body main article section .container #education .institutions .university .extra .info .date, html body main article section .container #education .institutions .music-conservatory .extra .info .date {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 14px;
+  margin-top: 0.35em;
+}
+html body main article section .container #education .institutions .cambridge {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+html body main article section .container #education .institutions .cambridge .first-certificate {
+  display: flex;
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.33);
+}
+html body main article section .container #education .institutions .cambridge .first-certificate img {
+  width: 31em;
+  height: auto;
+  background: white;
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+html body main article section .container #education .institutions .cambridge .first-certificate .info {
+  color: white;
+  background: rgba(0, 0, 0, 0.66);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2em;
+  padding-right: 2.5em;
+}
+html body main article section .container #education .institutions .cambridge .first-certificate .info h1 {
+  margin: 0px;
+  margin-bottom: 0.15em;
+}
+html body main article section .container #education .institutions .cambridge .first-certificate .info p {
+  margin: 0px;
+  margin-top: 0.15em;
+}
+html body main article section .container #education .institutions .cambridge .first-certificate .info .date {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 14px;
+  margin-top: 0.35em;
+}
+html body main article section .container #education .languages .lang-container {
+  display: flex;
+  flex-direction: row;
+}
+html body main article section .container #education .languages .lang-container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+html body main article section .container #education .languages .lang-container div img {
+  width: 9em;
+  height: 9em;
+  margin-right: 1em;
+}
+html body main article section .container #education .languages .lang-container div div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0em;
+  margin-right: 0em;
+  align-items: flex-start;
+}
+html body main article section .container #education .languages .lang-container div div h1 {
+  font-size: 2em;
+  color: white;
+  margin: 0em;
+  margin-bottom: 0.25em;
+}
+html body main article section .container #education .languages .lang-container div div div {
+  display: flex;
+  font-family: system-ui;
+}
+html body main article section .container #education .languages .lang-container div div div p {
+  margin: 0.25em;
+  color: white;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-size: 1.15em;
+}
+html body main article section .container #education .languages .lang-container div div div p:nth-child(2) {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+html body main article section .container #career {
+  display: flex;
+  width: 105%;
+  height: auto;
+  align-items: center;
+  background-image: url(../media/img/extra/experiences-66.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+html body main article section .container #career .title-experience p {
+  color: #f7f7f7;
+  font-size: 7em;
+  text-shadow: 6px 4px 0px #303030;
+  margin: 0px;
+  margin-bottom: 0.5em;
+}
+html body main article section .container #career .timeline {
+  font-family: system-ui;
+  margin: 0.75em;
+  font-weight: 600;
+}
+html body main article section .container #career .timeline p {
+  color: #f7f7f7;
+  margin: 0px;
+  width: 85em;
+}
+html body main article section .container #career .experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 1.5em;
+  font-family: system-ui;
+}
+html body main article section .container #career .experiences .exp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+html body main article section .container #career .experiences .exp-container .exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1em;
+  margin-left: 1em;
+  color: white;
+  box-shadow: 0px 1px 20px 1px rgba(255, 255, 255, 0.33);
+}
+html body main article section .container #career .experiences .exp-container .exp img {
+  width: 27em;
+  height: auto;
+}
+html body main article section .container #career .experiences .exp-container .exp .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.66);
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+html body main article section .container #career .experiences .exp-container .exp .content .job-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+html body main article section .container #career .experiences .exp-container .exp .content .job-title h2 {
+  margin: 0em;
+  font-size: 19.35px;
+}
+html body main article section .container #career .experiences .exp-container .exp .content .job-title h3 {
+  margin: 0em;
+  font-size: 21px;
+}
+html body main article section .container #career .experiences .exp-container .exp .content .job-extra p {
+  margin: 0em;
+  font-size: 14px;
+}
+html body main article section .container #career .experiences .exp-container .exp .content .job-details {
+  width: 24em;
+}
+html body main article section .container #skills {
+  display: flex;
+  width: 105%;
+  height: auto;
+  align-items: center;
+  background-image: url(../media/img/extra/postproduction-66.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
+}
+html body main article section .container #skills .title-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main article section .container #skills .title-skills p {
+  color: #f7f7f7;
+  font-size: 7em;
+  margin: 0px;
+  margin-bottom: 0.5em;
+}
+html body main article section .container #skills .title-skills .metrics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+html body main article section .container #skills .title-skills .metrics > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 12em;
+  height: 26em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-right: 3em;
+  margin-left: 3em;
+  background: #191919;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 10px 0px white;
+}
+html body main article section .container #skills .title-skills .metrics > div > p {
+  margin-bottom: 0px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 15px;
+}
+html body main article section .container #skills .title-skills div > img {
+  width: 150px;
+  height: auto;
+}
+html body main article section .container #skills .title-skills .metrics > div > h2 {
+  color: #f7f7f7;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+html body main article section .container #skills .title-skills .metrics > div > .descr {
+  color: #f7f7f7;
+  font-size: 15px;
+  text-align: center;
+  font-family: system-ui;
+  width: 14em;
+  height: auto;
+}
+html body main article section .container #skills .title-skills .metrics > div > .statement {
+  color: #f7f7f7;
+  font-size: 14px;
+  text-align: center;
+  font-family: system-ui;
+  width: 14em;
+  height: auto;
+}
+html body main article section .container #skills .card-grid {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 1.5em;
+  margin-bottom: 4em;
+  justify-items: start;
+}
+html body main article section .container #skills .card-grid .frontend-web {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em;
+  margin-top: 1.5em;
+}
+html body main article section .container #skills .card-grid .frontend-web .title-frontend-web-card-container {
+  font-size: xx-large;
+  color: white;
+}
+html body main article section .container #skills .card-grid .frontend-web .frontend-web-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+html body main article section .container #skills .card-grid .frontend-web .frontend-web-card-container .frontend-title-cell {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+html body main article section .container #skills .card-grid .ui-ux-design {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em;
+}
+html body main article section .container #skills .card-grid .ui-ux-design .title-ui-ux-design-card-container {
+  font-size: xx-large;
+  color: white;
+}
+html body main article section .container #skills .card-grid .ui-ux-design .ui-ux-design-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+html body main article section .container #skills .card-grid .ui-ux-design .ui-ux-design-card-container .ui-ux-design-title-cell {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+html body main article section .container #skills .card-grid .post-production {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em;
+}
+html body main article section .container #skills .card-grid .post-production .title-post-production-card-container {
+  font-size: xx-large;
+  color: white;
+}
+html body main article section .container #skills .card-grid .post-production .post-production-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+html body main article section .container #skills .card-grid .post-production .post-production-card-container .post-production-title-cell {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+html body main article section .container #skills .card-grid .databases {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em;
+}
+html body main article section .container #skills .card-grid .databases .title-databases-card-container {
+  font-size: xx-large;
+  color: white;
+}
+html body main article section .container #skills .card-grid .databases .databases-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+html body main article section .container #skills .card-grid .databases .databases-card-container .databases-title-cell {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+html body main article section .container #skills .card-grid .honorable-mentions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em;
+}
+html body main article section .container #skills .card-grid .honorable-mentions .title-honorable-mentions-card-container {
+  font-size: xx-large;
+  color: white;
+}
+html body main article section .container #skills .card-grid .honorable-mentions .honorable-mentions-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+html body main article section .container #skills .card-grid .honorable-mentions .honorable-mentions-card-container .honorable-mentions-title-cell {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+html body main article section .container #skills .card-grid .others {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+}
+html body main article section .container #skills .card-grid .others .title-others-card-container {
+  font-size: xx-large;
+  color: white;
+}
+html body main article section .container #skills .card-grid .others .others-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+html body main article section .container #skills .card-grid .others .others-card-container .others-title-cell {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+html body main article section .container #skills .flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 1em;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+html body main article section .container #skills .flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.25s;
+  transform-style: preserve-3d;
+}
+html body main article section .container #skills .flip-card-back > p, html body main article section .container #skills .flip-card-back > b {
+  font-family: system-ui;
+}
+html body main article section .container #skills .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+html body main article section .container #skills .flip-card-front, html body main article section .container #skills .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+html body main article section .container #skills .flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+html body main article section .container #skills .flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  transition: box-shadow 0.25s;
+}
+html body main article section .container #skills .flip-card-back:hover {
+  box-shadow: 0px 0px 10px 5px white;
+}
+html body main article section .container #skills .flip-card-back h1 {
+  margin-bottom: 0.5em;
+}
+html body main article section .container #skills .flip-card-back > * {
+  margin: 0.075em;
+}
+html body main article section .container #skills .flip-card-back > .additional {
+  font-size: 15px;
+  margin-top: 0.15em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+html body main article section .container #skills .flip-card-back > b {
+  margin-bottom: 0em;
+}
+html body main article section .container #skills .white-text {
+  color: white;
+}
+html body main article section .container #skills .black-text {
+  color: black;
+}
+html body main article section .container #skills .html-fill {
+  background-color: #ef652a;
+}
+html body main article section .container #skills .css-fill {
+  background-color: #0089ca;
+}
+html body main article section .container #skills .js-fill {
+  background-color: #fdd83c;
+}
+html body main article section .container #skills .vue-fill {
+  background-color: #41b883;
+}
+html body main article section .container #skills .sass-fill {
+  background-color: #cd6799;
+}
+html body main article section .container #skills .ai-fill {
+  background-color: #ff9a00;
+}
+html body main article section .container #skills .xd-fill {
+  background-color: #ff61f6;
+}
+html body main article section .container #skills .ps-fill {
+  background-color: #31a8ff;
+}
+html body main article section .container #skills .figma-fill {
+  background-color: #2c2d35;
+}
+html body main article section .container #skills .pr-au-ae-fill {
+  background-color: #00005b;
+}
+html body main article section .container #skills .mysql-fill {
+  background-color: #f29111;
+}
+html body main article section .container #skills .postgre-fill {
+  background-color: #336791;
+}
+html body main article section .container #skills .neo4j-fill {
+  background-color: #005f50;
+}
+html body main article section .container #skills .c-fill {
+  background-color: #a8c2ff;
+}
+html body main article section .container #skills .php-fill {
+  background-color: #8993be;
+}
+html body main article section .container #skills .matlab-fill {
+  background-color: #ffc26a;
+}
+html body main article section .container #skills .java-fill {
+  background-color: #ffda9f;
+}
+html body main article section .container #skills .cx2plus-fill {
+  background-color: #0081bf;
+}
+html body main article section .container #skills .dsmax-fill {
+  background-color: #1ecfdc;
+}
+html body main article section .container #services {
+  display: flex;
+  width: 105%;
+  height: auto;
+  align-items: center;
+  background-image: url(../media/img/extra/services-66.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+html body main article section .container #services .title-services p {
+  color: #f7f7f7;
+  font-size: 7em;
+  text-shadow: 6px 4px 0px #303030;
+  margin: 0px;
+}
+html body main article section .container #availability {
+  display: flex;
+  width: 105%;
+  height: auto;
+  align-items: center;
+  background-image: url(../media/img/extra/availability-66.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+html body main article section .container #availability .title-availability p {
+  color: #f7f7f7;
+  font-size: 7em;
+  text-shadow: 6px 4px 0px #303030;
+  margin: 0px;
+}
+html body footer {
+  font-size: 1.1em;
+  display: flex;
+  width: 102%;
+  height: auto;
+  background: linear-gradient(334deg, #f3008d 0%, #00004e 100%);
+  box-shadow: 0em 0em 20px 0px white;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+html body footer .copyright {
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
